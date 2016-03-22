@@ -8,7 +8,7 @@ p, li, li a {
   color: #7d7d8f;
 }
 a {
-  color: #c94645;
+  color: #5970ba;
 }
 p {
 	line-height: 1.5;
@@ -17,11 +17,11 @@ p {
 /* Default highlight color */
 ::-moz-selection {
   color: #fff;
-  background: #c94645;
+  background: #5970ba;
 }
 ::selection {
   color: #fff;
-  background: #c94645;
+  background: #5970ba;
 }
 
 .g-textarea-noresize {
@@ -39,7 +39,7 @@ p {
 	font-weight: bold;
 }
 .btn-u-lg.btn-u-bg-default {
-	background: #c94645;
+	background: #5970ba;
 }
 .btn-u-lg.btn-u-bg-default:hover,
 .btn-u-lg.btn-u-bg-default:focus {
@@ -47,9 +47,9 @@ p {
 	color: #fff;
 }
 .btn-u-lg.btn-u-default {
-	border: solid 2px #c94645;
+	border: solid 2px #5970ba;
 	background: none;
-	color: #c94645;
+	color: #5970ba;
 }
 .btn-u-lg.btn-u-default:hover,
 .btn-u-lg.btn-u-default:focus {
@@ -96,8 +96,8 @@ p {
 	}
 }
 
-.g-color-default { color: #c94645;}
-.g-bg-default { background: #c94645;}
+.g-color-default { color: #5970ba;}
+.g-bg-default { background: #5970ba;}
 
 .g-color-white { color: #fff !important;}
 .g-color-white-darker { color: rgba(255,255,255,.5) !important; }
@@ -279,7 +279,7 @@ p {
 	font-style: normal;
 	letter-spacing: 5px;
 	display: block;
-	color: #c94645;
+	color: #5970ba;
 	margin-bottom: 25px;
 }
 .g-heading-v7 .h2:after {
@@ -287,7 +287,7 @@ p {
 	display: inline-block;
 	width: 70px;
 	height: 10px;
-	background: #c94645;
+	background: #5970ba;
 	position: absolute;
 	left: 0;
 	bottom: 0;
@@ -441,7 +441,7 @@ p {
 .one-page-header .navbar-nav > li.active > a:hover,
 .one-page-header .navbar-nav > li.active > a:focus,
 .one-page-header .navbar-nav > li.active > a {
-	color: #c94645 !important;
+	color: #5970ba !important;
 }
 
 /*Designing the toggle button for responsive*/
@@ -454,7 +454,7 @@ p {
 }
 
 .one-page-header.architecture-nav .navbar-toggle:hover .icon-bar {
-    background: #c94645 !important;
+    background: #5970ba !important;
 }
 
 @media (max-width: 1200px) {
@@ -622,7 +622,7 @@ p {
 }
 
 .arch-service-in .icon {
-	color: #c74645;
+	color: #5970ba;
 	font-size: 30px;
 }
 
@@ -642,7 +642,7 @@ p {
 .arch-service-in .arch-service-btn {
 	background: transparent;
 	border: none;
-	color: #c94645;
+	color: #5970ba;
 	font-size: 11px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -685,7 +685,7 @@ p {
 }
 
 .modal button.close {
-    background: #c94645;
+    background: #5970ba;
     color: #fff;
     height: 50px;
     width: 50px;
@@ -738,7 +738,7 @@ p {
 }
 
 .service-section .owl-carousel-v4 .owl-a {
-	color: #c94645;
+	color: #5970ba;
 	font-size: 11px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -760,7 +760,7 @@ p {
 
 .service-section .owl-theme .owl-controls .owl-buttons div:hover,
 .service-section .owl-theme .owl-controls .owl-buttons div:focus {
-  background: #c94645;
+  background: #5970ba;
 }
 
 .service-section .owl-theme .owl-buttons i {
@@ -839,7 +839,7 @@ p {
 }
 
 .cbp-item:hover .popup-title h3 em, .cbp-popup-lightbox-title h3 em {
-	color: #c94645;
+	color: #5970ba;
 }
 
 .cbp-item:hover .popup-title h3, .cbp-popup-lightbox-title h3 {
@@ -889,11 +889,11 @@ p {
 
 .cbp-popup-lightbox .cbp-popup-prev:hover,
 .cbp-popup-lightbox .cbp-popup-next:hover  {
-    background: #c94645;
+    background: #5970ba;
 }
 
 .cbp-popup-lightbox .cbp-popup-close {
-    background: #c94645;
+    background: #5970ba;
     color: #fff;
     height: 50px;
     width: 50px;
@@ -968,7 +968,7 @@ p {
 
 .team-section .owl-carousel-v4 .owl-list li > a:hover {
 	color: #fff;
-	background: #c94645;
+	background: #5970ba;
 }
 
 /*Owel-carousel controls*/
@@ -981,7 +981,7 @@ p {
 
 .team-section .owl-theme .owl-controls .owl-buttons div:hover,
 .team-section .owl-theme .owl-controls .owl-buttons div:focus {
-  background: #c94645;
+  background: #5970ba;
 }
 
 .team-section .owl-theme .owl-buttons i {
@@ -1132,18 +1132,18 @@ p {
 }*/
 
 .tab-v2 .nav-tabs li.active a {
-    background: #c94645;
+    background: #5970ba;
     padding: 60px 45px 26px;
     border: none;
     color: #fff;
 }
 
 .tab-v2 .nav-tabs li.active a:before  {
-    background: #c94645;
+    background: #5970ba;
 }
 
 .tab-v2 .nav-tabs li.active a:after  {
-    border-left: 26px solid #c94645;
+    border-left: 26px solid #5970ba;
 }
 
 /*.tab-v2 .nav-tabs > li.active > a > span {
@@ -1217,7 +1217,7 @@ p {
 
 .owl-theme .owl-slider-v4-gallery .owl-controls .owl-page:hover span,
 .owl-theme .owl-slider-v4-gallery .owl-controls .owl-page.active span {
-    background: #c94645 none repeat scroll 0% 0%;
+    background: #5970ba none repeat scroll 0% 0%;
 }
 
 /*Fourth owel carousel*/
@@ -1247,7 +1247,7 @@ p {
 }
 .gallery-section .owl-carousel-v4 .owl-slider-v4-gallery-2 h3 a:hover,
 .gallery-section .owl-carousel-v4 .owl-slider-v4-gallery-2 h3 a:focus {
-	color: #c94645;
+	color: #5970ba;
 }
 
 .gallery-section .owl-carousel-v4 .owl-slider-v4-gallery-2 p {
@@ -1272,7 +1272,7 @@ p {
 .owl-theme .owl-slider-v4-gallery-2 .owl-controls .owl-page.active span,
 .owl-theme .owl-slider-v4-testo .owl-controls .owl-page:hover span,
 .owl-theme .owl-slider-v4-testo .owl-controls .owl-page.active span {
-    background: #c94645 none repeat scroll 0% 0%;
+    background: #5970ba none repeat scroll 0% 0%;
 }
 
 /*--------------------------------------------------
@@ -1310,7 +1310,7 @@ p {
 }
 .awards-desc a {
 	font-size: 11px;
-	color: #c94645;
+	color: #5970ba;
 	font-weight: bold;
 }
 
@@ -1440,7 +1440,7 @@ p {
 
 .contact-list ul li .icon {
 	font-size: 20px;
-	color: #c94645;
+	color: #5970ba;
 }
 
 .contact-list ul .first-item {
@@ -1505,7 +1505,7 @@ p {
 
 /*The Google maps div design */
 .map-div {
-	background: #c94645;
+	background: #5970ba;
 	text-align: center;
 	color: #fff;
 	position: relative;
@@ -1576,7 +1576,7 @@ p {
 
 .footer-list li > a:hover {
 	color: #fff;
-	background: #c94645;
+	background: #5970ba;
 }
 
 /* Owl Carousel */
@@ -1595,11 +1595,11 @@ p {
 
 /*Success message*/
 .sky-form .message {
-    color: #c94645;
+    color: #5970ba;
 }
 
 .sky-form .message i {
-    border: 1px solid #c94645;
+    border: 1px solid #5970ba;
 }
 
 .sky-form.submited .message p {
