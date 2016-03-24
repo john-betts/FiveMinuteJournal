@@ -409,19 +409,19 @@
 
 			<div id="app">
   <validator name="validation1">
-    <form novalidate>
+    <form novalidate v-on:submit.prevent="submit">
       <div class="form-group col-xs-4 " >
         <label for="name">Name:</label>
-        <input id="name" type="text" class="form-control" v-validate:name="['required']">
+        <input v-model="name" id="name" type="text" class="form-control" v-validate:name="['required']">
       </div>
 			<div class="form-group col-xs-4">
         <label for="address">Email:</label>
-				<input id="address" type="text" class="form-control" v-validate:address="['email']">
+				<input v-model="address" id="address" type="text" class="form-control" v-validate:address="['email']">
 
       </div>
       <div class="form-group col-xs-4">
         <label for="comment">Password:</label>
-				<input id="password" type="text" class="form-control" v-validate:password1="{ minlength: 8, required: true }"/>
+				<input v-model="password" id="password" type="password" class="form-control" v-validate:password1="{ minlength: 8, required: true }"/>
 
       </div>
       <div class="errors">
@@ -431,7 +431,7 @@
 				<p v-if="$validation1.password1.required">Password required</p>
         <p v-if="$validation1.password1.minlength">Password is too short</p>
       </div>
-      <input type="button" class="btn btn-default" value="Register" v-if="$validation1.valid">
+      <input type="submit" class="btn btn-default" value="Register" v-if="$validation1.valid">
     </form>
   </validator>
 
@@ -524,11 +524,30 @@
 
 
 <script>
+    Vue.validator('email', function (val/*,rule*/) {
+          return /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(val);
+    });
+    new Vue({
+        el: '#app',
+        data: {
+            name: '',
+            address: '',
+            password: ''
+        },
+        methods: {
+            submit: function() {
+                Users.push({
+                    name: this.name,
+                    email: this.address,
+                    paddword: this.password
+                });
+                this.name = '';
+                this.address = '';
+                this.password = '';
+            }
+        }
 
-		new Vue({
-		  el: '#app'
-
-		})
+    })
 
 </script>
 
