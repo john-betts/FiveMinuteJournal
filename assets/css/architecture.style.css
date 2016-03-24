@@ -14,6 +14,10 @@ p {
 	line-height: 1.5;
 }
 
+.toobig {max-height: 70%; max-width: 70%; display: block; Margin: auto;}
+
+.toobig2 {max-height: 750px; max-width: 70%; display: block; Margin: auto;}
+
 /* Default highlight color */
 ::-moz-selection {
   color: #fff;
@@ -1275,44 +1279,7 @@ p {
     background: #5970ba none repeat scroll 0% 0%;
 }
 
-/*--------------------------------------------------
-    [9. Awards Section]
-----------------------------------------------------*/
-.awards-section .content-md {
-  padding-top: 80px;
-  padding-bottom: 68px;
-}
-/* Awards section design */
-.awards-desc {
-	padding: 50px 20px 10px;
-	text-align: center;
-	text-transform: uppercase;;
-}
-.awards-desc img {
-	margin: 0 auto 35px;
-	max-width: 202px;
-	max-height: 350px;
-	display: block;
-}
-.awards-desc em {
-	font: 300 11px "Roboto", Arial, sans-serif;
-	font-style: normal;
-	color: #9797a2;
-	letter-spacing: 1px;
-	display: block;
-	margin-bottom: 10px;
-}
-.awards-desc h3 {
-	font: 500 18px "Roboto", Arial, sans-serif;
-	color: #000;
-	margin: 0 0 25px;
-	letter-spacing: 2px;
-}
-.awards-desc a {
-	font-size: 11px;
-	color: #5970ba;
-	font-weight: bold;
-}
+
 
 /* Clients block */
 .clients-list {
@@ -1503,37 +1470,7 @@ p {
 	}
 }
 
-/*The Google maps div design */
-.map-div {
-	background: #5970ba;
-	text-align: center;
-	color: #fff;
-	position: relative;
-}
 
-.map-btn {
-	background: transparent;
-	text-align: center;
-	color: #fff;
-	height: 70px;
-	padding: 0 20px;
-	text-transform: uppercase;
-	font-size: 11px;
-	font-weight: bold;
-	border: none;
-	margin: 0 auto;
-}
-
-.map-div .icon {
-	position: absolute;
-	top: 28px;
-	left: fixed;
-}
-
-#map {
-	width: 100%;
-	height: 400px;
-}
 
 /*The copyrights design*/
 .copyrights {

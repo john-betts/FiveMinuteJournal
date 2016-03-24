@@ -269,17 +269,17 @@
 							<div class="owl-carousel-v4 owl-theme">
 								<div class="owl-slider-v4-gallery">
 									<div class="item">
-										<img src="assets/img-temp/feat1.jpg"  >
+										<img class="toobig" src="assets/img-temp/feat1.jpg"  >
 										<h3 class="h2 g-color-grey">Get your photos featured here by posting them with #5minutejournal</h3>
 									</div>
 
 									<div class="item">
-										<img src="assets/img-temp/feat2.jpg"  >
+										<img class="toobig" src="assets/img-temp/feat2.jpg"  >
 										<h3 class="h2 g-color-grey">Get your photos featured here by posting them with #5minutejournal</h3>
 									</div>
 
 									<div class="item">
-										<img src="assets/img-temp/feat3.jpg">
+										<img class="toobig2" src="assets/img-temp/feat3.jpg">
 										<h3 class="h2 g-color-grey">Get your photos featured here by posting them with #5minutejournal</h3>
 									</div>
 								</div>
@@ -302,7 +302,7 @@
 					<div class="owl-slider-v4-team">
 						<div class="item">
 							<img class="img-responsive" src="assets/img-temp/t1.jpg"  >
-							<small class="owl-small">Technical Supervisor</small>
+							<small class="owl-small">Some Kind Of Supervisor</small>
 							<span class="owl-span">John Betts</span>
 							<ul class="list-inline owl-list">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -313,7 +313,7 @@
 
 						<div class="item">
 							<img class="img-responsive" src="assets/img-temp/t1.jpg"  >
-							<small class="owl-small">Technical Director</small>
+							<small class="owl-small">Technically The Owner</small>
 							<span class="owl-span">John Betts</span>
 							<ul class="list-inline owl-list">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -324,7 +324,7 @@
 
 						<div class="item">
 							<img class="img-responsive" src="assets/img-temp/t1.jpg"  >
-							<small class="owl-small">Technical Manager</small>
+							<small class="owl-small">Self-proclaimed Manager</small>
 							<span class="owl-span">John Betts</span>
 							<ul class="list-inline owl-list">
 								<li><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -402,40 +402,56 @@
 			<h2 class="h2 g-mb-70"><em class="block-name">Now you can</em> Register</h2>
 
 			<!-- form and contatc information -->
+
+
+		<!-- vue form here-->
+
+			<div id="app">
+  <validator name="validation1">
+    <form novalidate>
+      <div class="form-group col-xs-4 " >
+        <label for="name">Name:</label>
+        <input id="name" type="text" class="form-control" v-validate:name="['required']">
+      </div>
+			<div class="form-group col-xs-4">
+        <label for="address">Email:</label>
+				<input id="address" type="text" class="form-control" v-validate:address="['email']">
+
+      </div>
+      <div class="form-group col-xs-4">
+        <label for="comment">Password:</label>
+				<input id="password" type="text" class="form-control" v-validate:password1="{ minlength: 8, required: true }"/>
+
+      </div>
+      <div class="errors">
+				<p v-show="$validation1.address.email">Invalid your mail address format.</p>
+        <p v-if="$validation1.name.required">Name required</p>
+				<p v-if="$validation1.address.email">Your email is invalid</p>
+				<p v-if="$validation1.password1.required">Password required</p>
+        <p v-if="$validation1.password1.minlength">Password is too short</p>
+      </div>
+      <input type="button" class="btn btn-default" value="Register" v-if="$validation1.valid">
+    </form>
+  </validator>
+
+
 			<div class="row">
 				<div class="col-md-9 col-sm-6 form no-side-padding">
 					<form action="#" method="post" id="sky-form3" class="sky-form register-style">
 						<fieldset>
 							<div class="row margin-bottom-30">
 								<div class="col-md-6 col-md-offset-0">
-									<div>
-										<input type="text" name="first-name" id="first-name" class="form-control" placeholder="Your First Name">
-									</div>
 								</div>
 								<div class="col-md-6 col-md-offset-0">
-									<div>
-										<input type="text" name="last-name" id="last-name" class="form-control" placeholder="Your Last Name">
-									</div>
 								</div>
 							</div>
-
 							<div class="row margin-bottom-30">
 								<div class="col-md-6 col-md-offset-0">
-									<div>
-										<input type="text" name="email" id="email" class="form-control" placeholder="Email *">
-									</div>
 								</div>
-
 								<div class="col-md-6 col-md-offset-0">
-									<div>
-										<input type="text" name="password" id="password" class="form-control" placeholder="Password">
-									</div>
+
 								</div>
 							</div>
-
-
-
-							<p><button type="submit" class="btn-u btn-u-lg btn-u-bg-default btn-u-upper">Register Now!</button></p>
 						</fieldset>
 
 						<div class="message">
@@ -445,7 +461,7 @@
 					</form>
 				</div>
 
-				<div class="col-md-3 col-sm-6 register-list">
+				<div class="register-list">
 					<ul class="list-unstyled margin-bottom-30">
 						<li><span aria-hidden="true" class="fa fa-map-signs"></span></li>
 						 <li class="first-item">Address</li>
@@ -470,6 +486,8 @@
 		</div>
 
 		<div class="container-fluid no-side-padding">
+
+
 
 
 		<!-- copyrights -->
@@ -500,9 +518,36 @@
 	<script src="assets/plugins/jquery.easing.min.js"></script>
 	<script src="assets/plugins/pace/pace.min.js"></script>
 	<script src="assets/plugins/owl-carousel2/owl.carousel.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/vue/1.0.18/vue.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/vue.validator/2.0.0-beta.3/vue-validator.min.js"></script>
+
+
+<script>
+
+		new Vue({
+		  el: '#app'
+
+		})
+
+</script>
+
+<!--
+
+<script>
+
+new Vue({
+	el: '#app'
+	data: {email: ''}
+
+})
+</script>
+
+-->
+
+
 	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.form.min.js"></script>
 	<script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.validate.min.js"></script>
-	
+
 
 
 
@@ -518,9 +563,7 @@
 			ContactForm.initContactForm();
 		});
 	</script>
-	<!--[if lt IE 10]>
-	  <script src="assets/plugins/sky-forms-pro/skyforms/js/jquery.placeholder.min.js"></script>
-	<![endif]-->
+
 </body>
 
 
